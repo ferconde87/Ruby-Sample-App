@@ -34,3 +34,7 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Google Cloud Storage
+fer-rails-sample-4ca364a0527f.json
+
