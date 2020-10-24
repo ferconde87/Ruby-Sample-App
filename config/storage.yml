@@ -15,10 +15,11 @@ local:
 #   bucket: your_own_bucket
 
 # Remember not to checkin your GCS keyfile to a repository
+#credentials: <%= Rails.root.join("fer-rails-sample-4ca364a0527f.json") %>
 google:
   service: GCS
   project: fer-rails-sample
-  credentials: <%= Rails.root.join("fer-rails-sample-4ca364a0527f.json") %>
+  credentials: <%= ENV['GCS_CREDENTIALS'] %>
   bucket: fer-rails-sample
 
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
